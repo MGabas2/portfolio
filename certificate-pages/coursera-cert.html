@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certificate View</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+
+    <!-- Favicon -->
+    <!-- Favicons -->
+    <link href="https://res.cloudinary.com/dqs4lto99/image/upload/v1670144421/portfolio/mylogo_xf7bgr.png" rel="icon" />
+    <style>
+      /* Custom CSS for Certificate View */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+      }
+
+      .certificate-container {
+        max-width: 800px;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+      }
+
+      .certificate-header {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+      }
+
+      .certificate-content {
+        text-align: center;
+      }
+
+      .certificate-img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;
+      }
+
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="container mb-3">
+        <a href="#" class="btn btn-secondary" onclick="goBack()">Back</a>
+    </div>
+    <div class="certificate-container">
+      <div class="certificate-header">
+        <h4>Foundation of UX Design</h4>
+      </div>
+      <div class="certificate-content">
+        <img
+          src="https://res.cloudinary.com/dqs4lto99/image/upload/v1701160824/Foundation_of_UX_pbwyms.jpg"
+          class="certificate-img"
+          alt="Certificate"
+          data-toggle="modal"
+          data-target="#imageModal" />
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Image Zoom Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img
+              src="https://res.cloudinary.com/dqs4lto99/image/upload/v1701160824/Foundation_of_UX_pbwyms.jpg"
+              class="img-fluid"
+              alt="Zoomed Certificate Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    // Function to go back to the previous page
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</html>
